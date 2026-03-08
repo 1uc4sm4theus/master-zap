@@ -36,7 +36,7 @@ Inspirado no projeto **jmailarchive** (arquivo de e-mails do Epstein), transform
    ```bash
    git clone https://github.com/SEU_USUARIO/masterzap.git
    cd master-zap
-    ```
+   ```
  2. Instale as dependências
 ```bash
    cd masterzap
