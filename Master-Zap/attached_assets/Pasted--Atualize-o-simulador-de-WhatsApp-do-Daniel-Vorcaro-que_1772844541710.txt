@@ -1,0 +1,29 @@
+"Atualize o simulador de WhatsApp do Daniel Vorcaro que já está pronto. Adicione apenas o conteúdo das conversas vazadas com outras pessoas (não inclua as de Martha Graeff, que eu adiciono depois via PDF). Use as transcrições exatas da mídia de março 2026 (G1, O Globo, CNN, Poder360, etc.). Formate como chat real: bolhas de mensagem, timestamps quando disponíveis, remetente claro (ex: Daniel → Alexandre, ou Daniel → João Doria), e mantenha tom casual com erros de digitação originais.
+Aqui as mensagens para importar agora:
+
+Com Alexandre de Moraes (relatos indiretos via Martha, abril 2025):
+Data: 19/04/2025, 17h22
+Daniel: “To indo encontrar alexandre moraes aqui perto de casa.”
+Martha responde (mas ignore para adicionar só o lado dele se preferir): “Como assim amor / Ele está em Campos???? / Ou foi pra te ver?”
+Daniel: “Ele ta passando feriado.”
+Data: 29/04/2025 (após videochamada, approx. 22h48)
+Martha: “Quem era o primeiro cara?”
+Daniel: “Alexandre moraes.”
+Outra menção (março/abril 2025): Daniel: “Estou sim, acabou chegando Hugo e Ciro aqui pra falarem com Alexandre. Nao deve demorar. Mas se vc for dormir eu saio e te chamo.”
+Daniel: “Tô com Alexandre, tenho reunião depois com o Ciro.”
+
+Com Alexandre de Moraes (dia da prisão, 17/11/2025, das 7h19 às 20h48 – prints de bloco de notas/visualização única):
+Daniel (exemplo por volta 17h26): “Alguma novidade? Conseguiu ter notícia ou bloquear?” (contexto: bloquear prisão ou liquidação do banco, venda ao Fictor).
+(Outras: Daniel prestava contas sobre negociações e inquérito sigiloso; respostas de Moraes não recuperadas/publicadas integralmente).
+
+Com João Doria (maio 2025):
+João Doria: “Amigo Daniel, Boa tarde. Estou preocupado com você. Tenho escutado coisas que vão precisar de reação sua. Sempre com equilíbrio e ponderação, mas jamais com o silêncio. Vamos agendar um café?”
+Daniel: (responde sugerindo ligação em vez de café).
+
+Menções indiretas/outros (para adicionar como chats ou notas no app):
+Sobre Hugo Motta e Ciro Nogueira (março 2025): Daniel relata chegada deles para falar com Alexandre.
+Sobre Lula: Daniel relata a Martha uma “ótima” reunião com o presidente (dezembro 2024) – use como menção se quiser expandir rede.
+Outros contatos na agenda: Davi Alcolumbre, Aécio Neves, etc. (pode virar nodes no graph).
+
+
+Torne o app responsivo (CSS media queries para mobile/desktop, ajuste layout em telas menores). Ajeite o modo grafo (graph view): use lib como vis.js ou cytoscape.js para rede de contatos (nodes: Daniel, Alexandre Moraes, João Doria, Hugo Motta, Ciro Nogueira, Lula; edges baseados em menções/encontros/reuniões). Adicione zoom, scroll infinito nas conversas se crescer, e mantenha simples para performance.

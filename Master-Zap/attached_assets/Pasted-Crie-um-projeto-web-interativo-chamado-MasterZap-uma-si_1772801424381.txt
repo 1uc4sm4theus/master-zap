@@ -1,0 +1,64 @@
+Crie um projeto web interativo chamado "MasterZap" – uma simulação educativa estilo app de mensagens WhatsApp, focada exclusivamente em fatos públicos/vazados do caso Daniel Vorcaro (Banco Master, Operação Compliance Zero, CPI INSS, 2025-2026). Use o framework que achar melhor (React, Vue, Svelte, Next.js, ou HTML/CSS/JS puro + libs via CDN como vis-network para grafo). Torne bonito, responsivo e fiel ao WhatsApp (verde #075E54, bolhas chat, scroll, etc.).
+
+Requisitos obrigatórios:
+
+1. Interface principal:
+   - Header: "MasterZap - Caso Vorcaro (Apenas Público)" + barra de busca + botão "Modo Grafo" + botão "Citações"
+   - Sidebar esquerda: lista de contatos com foto placeholder circular, nome, preview última mensagem, hora fake, status "visto por último"
+   - Área direita: chat selecionado (balões: verde direito para "Vorcaro/eu", cinza esquerdo para contato; input fake no bottom)
+   - Barra de pesquisa filtra contatos em tempo real (case-insensitive)
+
+2. Lista de contatos completa (baseada em agenda PF e reportagens públicas março 2026 – use nomes exatos divulgados):
+   - Martha Graeff (principal, muitas mensagens vazadas)
+   - Alexandre de Moraes
+   - Dias Toffoli
+   - Kassio Nunes Marques
+   - Ricardo Lewandowski
+   - Henrique Lewandowski (filho)
+   - Viviane Barci de Moraes (esposa de Moraes)
+   - Davi Alcolumbre
+   - Hugo Motta
+   - Carlos Viana
+   - Ciro Nogueira
+   - Gabriel Galípolo (presidente BC)
+   - Ibaneis Rocha
+   - Cláudio Castro
+   - Joesley Batista
+   - Wesley Batista
+   - Nelson Tanure
+   - Deputados (18+ divulgados): Marcelo Álvaro Antônio, Paulo Abi-Ackel, Arthur Lira, Nikolas Ferreira, Aguinaldo Ribeiro, Altineu Côrtes, Doutor Luizinho, Fausto Pinato, Diego Coronel, João Carlos Bacelar, Márcio Marinho, Flávia Arruda, Rodrigo Maia, Lucas Gonzalez, Bilac Pinto, Fábio Mitidieri, etc.
+   - Outros: Benedito Gonçalves (STJ), Antônio Rueda, Aécio Neves, João Doria, Kakay, Bruno Bianco, etc. (total 30-40, com placeholders se necessário)
+
+3. Conversas reais públicas (SOMENTE transcrições/paráfrases EXATAS de reportagens – NÃO INVENTE; cite fontes em comentários):
+   - Chat principal Martha Graeff: 20+ mensagens reais, agrupadas por data/tópico (exemplos de fontes: G1, Folha, Metrópoles, Gazeta do Povo, Instagram/FB posts):
+     - Abril 2025 (encontro Moraes): Vorcaro: "To indo encontrar alexandre moraes aqui perto de casa" → Martha: "Como assim amor. Ele está em Campos???? Ou foi pra te ver?" → Vorcaro: "Ele ta passando feriado" → Depois video: Martha: "Quem era o primeiro cara?" Vorcaro: "Alexandre Moraes" → Martha: "Morri" → Vorcaro: "Ele gostou da casa amor!?? Tá muito mais astral"
+     - Sobre Ciro Nogueira: Vorcaro: "Ciro Nogueira. É um senador. Muito amigo meu. Quero te apresentar. Um dos meus grandes amigos de vida."
+     - Emenda Ciro: Vorcaro: "Essa emenda do Ciro é ótima" / "Está todo mundo louco"
+     - Reunião Davi Alcolumbre (ago/2025): Vorcaro: "Reunião até meia-noite na casa oficial" → Martha pergunta; Vorcaro: "Foi bom..."
+     - Hugo Motta: Vorcaro: "Pousei, encontrei Hugo no aeroporto"
+     - Frase máfia: Vorcaro: "Esse negócio de banco sempre falei é igual máfia. Não dá para sair. Ninguém sai bem. Só sai mal."
+     - Bolsonaro: Vorcaro: "Idiota" (sobre post de Bolsonaro) → Martha reage
+     - Outras: menções a Lula, André Esteves (pressão BC), "bomba atômica", jantar Motta, etc.
+   - Outros chats: teaser curto ou "Mensagens sugerem encontro/agenda PF" (ex: Moraes – msg dia prisão; Toffoli – menções indiretas)
+
+4. Modo Grafo (botão abre tela com grafo interativo usando vis.js ou similar via CDN):
+   - Nó central: "Daniel Vorcaro"
+   - Nós: contatos acima
+   - Arestas com labels reais: "Mensagens vazadas (Martha)", "Encontro relatado (Moraes abr/2025)", "Reunião residência (Davi ago/2025)", "Grande amigo/emenda (Ciro)", "Agenda PF", "Contato BC (Galípolo)", etc.
+   - Interativo: zoom, drag, cores (verde forte para ligações diretas)
+
+5. Seção Citações/Nomes mencionados: botão ou aba mostrando lista de nomes citados nas mensagens (ex: Bolsonaro "idiota", Lula convocado, André Esteves pressão, Ivanka/Jared carnaval, etc.) com contexto breve e fonte.
+
+6. Funcionalidade:
+   - Clique contato → carrega chat
+   - Pesquisa filtra
+   - Scroll suave, emojis reais onde houver
+   - Dados em array/JSON hard-coded em JS
+   - Responsivo, visual atraente
+
+7. Estrutura e comentários:
+   - Arquivos: index.html/main.tsx ou app.js, styles, script
+   - Em TODO código: comentários com fontes (ex: // Fonte: Poder360 05/03/2026; SBT News Coluna da Basília; Folha 06/03/2026; G1 mensagens CPI; Revista Oeste deputados; Metrópoles agenda BC)
+   - 100% client-side, educativo, sem ficção ou sensacionalismo além do público.
+
+Gere o projeto completo pronto para rodar no Replit (inclua package.json se usar framework). Foque em fidelidade aos fatos divulgados!
