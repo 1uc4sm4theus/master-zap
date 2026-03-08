@@ -39,7 +39,7 @@ Inspirado no projeto **jmailarchive** (arquivo de e-mails do Epstein), transform
    ```
  2. Instale as dependências
 ```bash
-   cd masterzap
+npm install // ou Yarn Install
 ```
 
 3. Execute o Projeto
